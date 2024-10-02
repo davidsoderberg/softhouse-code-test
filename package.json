@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "xmlbuilder2": "3.1.1"
+  },
+  "engines": {
+    "node": "20.10.0"
+  }
+}
