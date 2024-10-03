@@ -22,6 +22,7 @@ const createAddress = (person, parts) => {
   const [street, city, zipcode] = parts;
 
   if (!street) {
+    console.error('Street missing, can not create address');
     return;
   }
 
