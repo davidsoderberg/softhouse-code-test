@@ -43,6 +43,7 @@ const createPhone = (person, parts) => {
   const [mobile, landline] = parts;
 
   if (!mobile || !landline) {
+    console.error('Mobile or landline missing, can not create phone');
     return;
   }
 
