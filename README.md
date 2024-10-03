@@ -1,5 +1,5 @@
-# Install
-To install script run:
+# Install script dependencies
+To install script dependencies run:
 ```
 npm install
 ```

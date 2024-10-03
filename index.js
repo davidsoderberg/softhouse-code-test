@@ -39,7 +39,7 @@ const convertToXML = (fileContent) => {
   }
 
   // Return the XML as a string
-  return xml.end({ prettyPrint: true });
+  return xml.end({ prettyPrint: true, headless: true });
 };
 
 // Example usage
@@ -54,3 +54,7 @@ P|Joe|Biden
 A|White House|Washington, D.C`;
 
 console.log(convertToXML(input));
+
+module.exports = {
+  convertToXML,
+};
