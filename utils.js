@@ -7,10 +7,10 @@ const createFamilyMember = (person, parts) => {
   }
 
   const familyMember = person.ele('family');
-  familyMember.ele('name').txt(name).up();
+  familyMember.ele('name').txt(name);
 
   if (born) {
-    familyMember.ele('born').txt(born).up();
+    familyMember.ele('born').txt(born);
   }
 
   return familyMember;
@@ -26,14 +26,14 @@ const createAddress = (person, parts) => {
     return;
   }
 
-  address.ele('street').txt(street).up();
+  address.ele('street').txt(street);
 
   if (city) {
-    address.ele('city').txt(city).up();
+    address.ele('city').txt(city);
   }
 
   if (zipcode) {
-    address.ele('zipcode').txt(zipcode).up();
+    address.ele('zipcode').txt(zipcode);
   }
 
   return address;
@@ -50,11 +50,11 @@ const createPhone = (person, parts) => {
   const phone = person.ele('phone');
 
   if (mobile) {
-    phone.ele('mobile').txt(mobile).up();
+    phone.ele('mobile').txt(mobile);
   }
 
   if (landline) {
-    phone.ele('landline').txt(landline).up();
+    phone.ele('landline').txt(landline);
   }
 
   return phone;
@@ -69,10 +69,10 @@ const createPerson = (people, parts) => {
   }
 
   const person = people.ele('person');
-  person.ele('firstname').txt(firstname).up();
+  person.ele('firstname').txt(firstname);
 
   if (lastname) {
-    person.ele('lastname').txt(lastname).up();
+    person.ele('lastname').txt(lastname);
   }
 
   return person;
